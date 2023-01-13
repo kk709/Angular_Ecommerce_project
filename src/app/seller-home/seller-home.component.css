@@ -1,0 +1,18 @@
+.table th, table td{
+    border: 1px solid black;
+    padding: 10px;
+    min-width: 160px;
+}
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: blueviolet;
+    margin-top: 5%;
+}
+.delete{
+    margin-left: 10px;
+}
+table{
+    margin-left: 70px;
+}

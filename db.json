@@ -1,0 +1,79 @@
+{
+  "seller": [
+    {
+      "name": "hasnain",
+      "email": "has@gmail.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "abc@456",
+      "id": 2
+    },
+    {
+      "name": "haris",
+      "email": "haris@gmail.com",
+      "password": "123kk67h",
+      "id": 3
+    },
+    {
+      "name": "rana ",
+      "email": "rana@gmail.com",
+      "password": "123r67a",
+      "id": 4
+    },
+    {
+      "name": "raheel",
+      "email": "raheel@gmail.com",
+      "password": "123Raheel",
+      "id": 5
+    },
+    {
+      "name": "Imran Ali",
+      "email": "imran@gmail.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "email": "sabir@gmail.com",
+      "password": "12345",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "name": "Apple",
+      "price": "Rs.500",
+      "category": "Fruits",
+      "image": "https://apple/fruits/",
+      "discription": "1st stock of fresh apples",
+      "id": 1
+    },
+    {
+      "name": "vegetables",
+      "price": "Rs.50",
+      "category": "vegetables",
+      "image": "https://................",
+      "discription": "1st stock",
+      "id": 2
+    },
+    {
+      "name": "T-shirts",
+      "price": "Rs.50",
+      "category": "Closths",
+      "image": "https://................",
+      "discription": "1st stock",
+      "id": 3
+    },
+    {
+      "name": "Denim Jeans",
+      "price": "Rs.50",
+      "category": "Closths",
+      "image": "https://................",
+      "discription": "1st stock",
+      "id": 4
+    }
+  ]
+}

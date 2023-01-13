@@ -1,0 +1,33 @@
+<div class="product-list">
+    <h1>All Product List</h1>
+    <p style="color: red;">{{addProductMessage}}</p>
+    <table border="1px solid">
+        <thead class="table">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Imgae</th>
+                <th>Discription</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of ListOfProduct">
+                <td>{{data.id}}</td>
+                <td>{{data.name}}</td>
+                <td>{{data.price}}</td>
+                <td>{{data.category}}</td>
+                <td>{{data.image}}</td>
+                <td>{{data.discription}}</td>
+                <td><a routerLink="/product-update/{{data.id}}" class="btn btn-outline-info " style="font-size: 9px;"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a class="btn btn-outline-danger delete" (click)='delete(data.id)'
+                    style="font-size: 9px;"><i class="fa-solid fa-trash"></i></a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
