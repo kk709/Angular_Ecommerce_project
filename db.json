@@ -45,35 +45,67 @@
   "products": [
     {
       "name": "Apple",
-      "price": "Rs.500",
+      "price": "500",
       "category": "Fruits",
-      "image": "https://apple/fruits/",
-      "discription": "1st stock of fresh apples",
+      "image": "https://www.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg",
+      "discription": "1st stock of fresh apples.",
       "id": 1
     },
     {
       "name": "vegetables",
-      "price": "Rs.50",
+      "price": "50",
       "category": "vegetables",
-      "image": "https://................",
-      "discription": "1st stock",
+      "image": "https://images.unsplash.com/photo-1597362925123-77861d3fbac7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmVnZXRhYmxlc3xlbnwwfHwwfHw%3D&w=1000&q=80",
+      "discription": "1st stock of the month",
       "id": 2
     },
     {
       "name": "T-shirts",
-      "price": "Rs.50",
+      "price": "50",
       "category": "Closths",
-      "image": "https://................",
+      "image": "https://img.lovepik.com/element/40047/7563.png_300.png",
       "discription": "1st stock",
       "id": 3
     },
     {
       "name": "Denim Jeans",
-      "price": "Rs.50",
+      "price": "50",
       "category": "Closths",
-      "image": "https://................",
+      "image": "https://images.unsplash.com/photo-1565084888279-aca607ecce0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8amVhbnN8ZW58MHx8MHx8&w=1000&q=80",
       "discription": "1st stock",
       "id": 4
+    },
+    {
+      "name": "Toys",
+      "price": "150",
+      "category": "Toys",
+      "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2lkcyUyMHRveXN8ZW58MHx8MHx8&w=1000&q=80",
+      "discription": "Toys fro kids...",
+      "id": 5
+    },
+    {
+      "name": "Smart watch",
+      "price": "1000",
+      "category": "Gadgets",
+      "image": "https://navbharattimes.indiatimes.com/photo/msid-86391195,imgsize-264856/pic.jpg",
+      "discription": "Smart watches for men's",
+      "id": 6
+    },
+    {
+      "name": "I phone",
+      "price": "1000000",
+      "category": "Apple Phones",
+      "image": "https://cdn.shopify.com/s/files/1/0632/7880/9324/products/IMG-7325595_823x.jpg?v=1663003302",
+      "discription": "I phone 14 Pro Max",
+      "id": 7
+    },
+    {
+      "name": "Sneakers",
+      "price": "2000",
+      "category": "Shoes",
+      "image": "https://rukminim1.flixcart.com/image/832/832/k5bcscw0/shoe/t/n/g/371829-11-puma-white-orange-alert-original-imafny7da4vvtwv5.jpeg?q=70",
+      "discription": "Sneaker for boys and girls",
+      "id": 8
     }
   ]
 }

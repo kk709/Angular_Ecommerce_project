@@ -20,7 +20,7 @@
                 <td>{{data.name}}</td>
                 <td>{{data.price}}</td>
                 <td>{{data.category}}</td>
-                <td>{{data.image}}</td>
+                <td><img src={{data.image}} alt="apple" style="display: flex; height: 100px; width: 130px;" /></td>
                 <td>{{data.discription}}</td>
                 <td><a routerLink="/product-update/{{data.id}}" class="btn btn-outline-info " style="font-size: 9px;"><i class="fa-solid fa-pen-to-square"></i></a>
                     <a class="btn btn-outline-danger delete" (click)='delete(data.id)'

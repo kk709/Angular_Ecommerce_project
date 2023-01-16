@@ -34,3 +34,13 @@ body {
 .error-p{
     color: red;
 }
+
+.carousel-caption { 
+    background-color: #0000008c;
+    border-radius: 5px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 5px;
+}

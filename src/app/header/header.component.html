@@ -51,8 +51,13 @@
           </li>
         </ul>
             <div *ngIf="menuType==='default'" class="nav-search">
-                <input type="text" placeholder="Search for Products" />
+                <input (keyup)="searchproduct($event)" (blur)="search()" type="text" placeholder="Search for Products" />
                 <button>Search</button>
+                <ul class="suggested-result" *ngIf="searchResult">
+                  <li *ngFor="let abc of searchResult">
+                    <a>{{abc.name}}</a>
+                  </li>
+                </ul>
             </div>
       </div>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [ngSwitch]="menuType">
