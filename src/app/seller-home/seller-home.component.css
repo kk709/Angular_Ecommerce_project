@@ -1,5 +1,5 @@
 .table th, table td{
-    border: 1px solid black;
+    border: 2px solid blueviolet;
     padding: 10px;
     min-width: 160px;
 }

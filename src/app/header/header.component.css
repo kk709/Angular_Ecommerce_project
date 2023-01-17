@@ -1,6 +1,7 @@
-/* .navbar {
+.nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
 .nav h1 {
@@ -18,7 +19,7 @@
 
 .nav li {
     padding-left: 15px;
-    padding-top: 15px;
+    padding-top: 5px;
     color: blueviolet;
 }
 
@@ -30,18 +31,18 @@
 
 .nav li a {
     background-color: white;
-  color: blueviolet;
-  border: 1px solid #fff;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s;
+    color: blueviolet;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 .nav li a:hover {
     background-color: blueviolet;
-  color: white;
+    color: white;
 }
 
 .nav .nav-search {
@@ -70,8 +71,8 @@
 h1 a{
     color: blueviolet;
     text-decoration: none;
-} */
-.navbar-brand {
+}
+/* .navbar-brand {
     color: blueviolet;
     margin: 1px;
     font-size: 40px;
@@ -109,12 +110,12 @@ h1 a{
     border: 1px solid #fff;
     padding: 5px 10px;
     text-align: center;
-    /* text-decoration: none; */
+    text-decoration: none;
     display: inline-block;
     transition: 0.3s;
 }
 .nav-item .nav-link {
-    /* text-decoration: none; */
+    text-decoration: none;
     color: blueviolet;
     font-size: 20px;
 }
@@ -122,19 +123,19 @@ h1 a{
     padding-left: 15px;
     padding-top: 15px;
     color: blueviolet;
-}
+} */
 
 .logout{
     cursor: pointer;
 }
 
-/* .suggested-result{
+.suggested-result{
     position: absolute;
     display: list-item !important;
     z-index: 10;
     background-color: #fff;
     width: 300px;
-    top: 40px;
+    top: 60px;
     border: 1px solid #ddd;
     cursor: pointer;
 }
@@ -147,4 +148,4 @@ h1 a{
 .suggested-result li a {
     cursor: pointer;
     color: blueviolet;
-} */
+}

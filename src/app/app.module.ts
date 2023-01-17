@@ -14,6 +14,8 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductUpdateComponent } from './product-update/product-update.component';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ProductUpdateComponent } from './product-update/product-update.componen
     ErrorPageComponent,
     SellerHomeComponent,
     SellerAddProductComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    SearchPageComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,8 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { ProductUpdateComponent } from './product-update/product-update.component';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 const routes: Routes = [
@@ -34,6 +36,14 @@ const routes: Routes = [
     component:ProductUpdateComponent
   },
   {
+    path:'search/:query',
+    component:SearchPageComponent
+  },
+  {
+    path:'detail/:productId',
+    component:ProductDetailComponent
+  },
+  {
     path:'**',
     component:ErrorPageComponent
   }
@@ -41,6 +51,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+exports: [RouterModule]
 })
 export class AppRoutingModule { }

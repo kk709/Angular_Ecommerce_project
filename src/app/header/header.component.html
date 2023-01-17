@@ -1,8 +1,13 @@
-<!-- <nav class="nav col-md-15">
+<nav class="nav col-md-15">
     <h1><a href="/">E-COMM</a></h1>
     <div *ngIf="menuType==='default'" class="nav-search">
-        <input type="text" placeholder="Search for Products" />
-        <button>Search</button>
+        <input (keyup)="searchproducts($event)" (blur)="search()" type="text" #searchInput placeholder="Search for Products" />
+        <button (click)="submitsearch(searchInput.value)">Search</button>
+        <ul class="suggested-result" *ngIf="searchResult">
+          <li *ngFor="let abc of searchResult">
+            <a (mousedown)="redirectToDetail(abc.id)">{{abc.name}}</a>
+          </li>
+        </ul>
     </div>
     <div [ngSwitch]="menuType">
         <ul *ngSwitchCase="'default'">
@@ -20,8 +25,8 @@
             <li><a href="#">{{sellerName | titlecase}}</a></li> 
         </ul>
     </div>
-</nav> -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+</nav>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">E-COMM</a>
       <button
@@ -51,8 +56,8 @@
           </li>
         </ul>
             <div *ngIf="menuType==='default'" class="nav-search">
-                <input (keyup)="searchproduct($event)" (blur)="search()" type="text" placeholder="Search for Products" />
-                <button>Search</button>
+                <input (keyup)="searchproducts($event)" (blur)="search()" type="text" #searchInput placeholder="Search for Products" />
+                <button (click)="submitsearch(searchInput.value)">Search</button>
                 <ul class="suggested-result" *ngIf="searchResult">
                   <li *ngFor="let abc of searchResult">
                     <a>{{abc.name}}</a>
@@ -77,4 +82,4 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->

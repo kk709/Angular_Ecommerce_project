@@ -1,0 +1,22 @@
+<div class="row product-detail" *ngIf="productDetail">
+    <div class="col-sm-6">
+        <img class="product-image" src={{productDetail.image}} />
+    </div>
+    <div class="col-sm-6">
+        <div class="detail">
+            <h1>{{productDetail.name}}</h1>
+            <h3>Price: {{productDetail.price}}</h3>
+            <div>
+                <h5>{{productDetail.category}}</h5>
+            </div>
+            <h6>{{productDetail.discription}}</h6>
+            <button class="btn btn-outline-primary">Add to cart</button>
+            <button class="button btn btn-outline-primary">Buy now</button>
+            <div class="quantity-group">
+                <button (click)="add()" ngbTooltip="" class="btn btn-outline-warning">+</button>
+                <input type="text" value={{num}} />
+                <button (click)="sub()" class="btn btn-outline-danger">-</button>
+            </div>
+        </div>
+    </div>
+</div>

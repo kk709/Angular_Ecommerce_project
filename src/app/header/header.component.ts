@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
     this.route.navigate(['']);
   }
 
-  searchproduct(query:KeyboardEvent){
+  searchproducts(query:KeyboardEvent){
     if(query){
       const element= query.target as HTMLInputElement;
       this.seller.searchProduct(element.value).subscribe((res) => {
@@ -53,6 +53,21 @@ export class HeaderComponent implements OnInit {
   
   search(){
     this.searchResult=undefined;
+  }
+
+  submitsearch(val:string){
+    if(val == ''){
+      this.ngOnInit();
+    }else{
+      this.route.navigate([`search/${val}`])
+    }
+    // console.log(val);
+
+  }
+
+  redirectToDetail(id:number){
+    this.route.navigate([`/detail/${id}`])
+
   }
 
 }
