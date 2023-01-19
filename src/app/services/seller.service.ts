@@ -72,7 +72,7 @@ export class SellerService {
     return this.http.put<products>(`http://localhost:3000/products/${product.id}`,product);
   }
   popularProduct(){
-    return this.http.get<products[]>(this._productsList+'?_limit=8');
+    return this.http.get<products[]>(this._productsList+'?_limit=9');
   }
   searchProduct(query:string){
     return this.http.get<products[]>(this._productsList+`?q=${query}`);

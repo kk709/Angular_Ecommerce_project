@@ -44,7 +44,7 @@
   ],
   "products": [
     {
-      "name": "Apple",
+      "name": "Fruits",
       "price": "500",
       "category": "Fruits",
       "image": "https://www.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg",
@@ -106,6 +106,20 @@
       "image": "https://rukminim1.flixcart.com/image/832/832/k5bcscw0/shoe/t/n/g/371829-11-puma-white-orange-alert-original-imafny7da4vvtwv5.jpeg?q=70",
       "discription": "Sneaker for boys and girls",
       "id": 8
+    }
+  ],
+  "users": [
+    {
+      "name": "hasnain",
+      "email": "hasnain@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "haris",
+      "email": "haris@gmail.com",
+      "password": "12345",
+      "id": 2
     }
   ]
 }

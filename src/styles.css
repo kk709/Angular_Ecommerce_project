@@ -21,8 +21,8 @@ body {
     height: 35px;
     margin-bottom: 20px;
     padding-left: 10px;
-    border: 1px solid blueviolet;
-    color: blueviolet;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity)) !important;;
 }
 
 .form-button{

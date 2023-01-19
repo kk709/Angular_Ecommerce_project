@@ -1,6 +1,6 @@
 <ngb-carousel *ngIf="popularProducts">
 	<ng-template *ngFor="let abc of popularProducts" ngbSlide>
-		<div class="picsum-img-wrapper">
+		<div class="picsum-img-wrapper carousal">
 			<a routerLink="/detail/{{abc.id}}"><img class="poroduct-header-img" src={{abc.image}} alt="Random first slide" /></a>
 		</div>
 		<div class="carousel-caption">
