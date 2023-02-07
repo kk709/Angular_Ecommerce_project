@@ -16,4 +16,5 @@ export interface products{
     category:string;
     image:string;
     discription:string;
+    quantity: undefined | number;
 }

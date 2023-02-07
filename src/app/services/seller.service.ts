@@ -1,14 +1,16 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { login, signUp } from '../data-type';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 import { products } from './../data-type';
+import { JsonPipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SellerService {
+  cartData = new EventEmitter<products[]| []>();
 
   isSellerLogGedIn = new BehaviorSubject<boolean>(false)
   isLoginError = new BehaviorSubject<boolean>(false);
@@ -76,6 +78,29 @@ export class SellerService {
   }
   searchProduct(query:string){
     return this.http.get<products[]>(this._productsList+`?q=${query}`);
+  }
+
+  localAddToCart(data:products){
+    let cartData = [];
+    let localCart = localStorage.getItem('localCart');
+    if(!localCart){
+      localStorage.setItem('localCart', JSON.stringify([data]));
+    }else{
+      cartData = JSON.parse(localCart);
+      cartData.push(data);
+      localStorage.setItem('localCart', JSON.stringify(cartData));
+    }
+    this.cartData.emit(cartData);
+  }
+
+  removeItemToCart(productId:number){
+    let cartData = localStorage.getItem('localCart');
+    if(cartData){
+      let items:products[] = JSON.parse(cartData)
+      items = items.filter((item:products) =>productId !== item.id)
+      localStorage.setItem('localCart', JSON.stringify(items));
+      this.cartData.emit(items);
+    }
   }
 
 }

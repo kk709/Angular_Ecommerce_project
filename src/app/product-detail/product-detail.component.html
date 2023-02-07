@@ -10,7 +10,8 @@
                 <h5>{{productDetail.category}}</h5>
             </div>
             <h6>{{productDetail.discription}}</h6>
-            <button class="btn btn-outline-primary">Add to cart</button>
+            <button *ngIf="!removeCart" class="btn btn-outline-primary" (click)="AddToCart()">Add to cart</button>
+            <button *ngIf="removeCart" class="btn btn-outline-primary" (click)="RemoveToCart(productDetail.id)">Remove to cart</button>
             <button class="button btn btn-outline-primary">Buy now</button>
             <div class="quantity-group">
                 <button (click)="add()" ngbTooltip="" class="btn btn-outline-warning">+</button>

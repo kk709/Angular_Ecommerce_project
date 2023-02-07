@@ -1,10 +1,27 @@
 <div class="user-auth">
-    <h1>User Signup</h1>
-    <p style="color: green;">{{signupMessage}}</p>
-    <form #userSignup="ngForm" class="common-form" (ngSubmit)="signup(userSignup.value)">
-        <input type="text" class="form-input" name="name" placeholder="Enter user name" ngModel />
-        <input type="email" class="form-input" name="email" placeholder="Enter user email" ngModel />
-        <input type="password" class="form-input" name="password" placeholder="Enter user password" ngModel />
-        <button type="submit" class="btn btn-outline-primary">Sign Up</button>
-    </form>
+    <div class="user-signup" *ngIf="!formtoggle">
+        <h1>User Signup</h1>
+        <p style="color: green;">{{signupMessage}}</p>
+        <form #userSignup="ngForm" class="common-form" (ngSubmit)="signup(userSignup.value)">
+            <input type="text" class="form-input" name="name" placeholder="Enter user name" ngModel />
+            <input type="email" class="form-input" name="email" placeholder="Enter user email" ngModel />
+            <input type="password" class="form-input" name="password" placeholder="Enter user password" ngModel />
+            <button type="submit" class="btn btn-outline-primary">Sign Up</button>
+            <label for="form2Example3">
+                Already have an account? <a (click)="openSigup()" class="link" style="cursor: pointer;">Click to Login</a>
+            </label>
+        </form>
+    </div>
+    <div class="user-login" *ngIf="formtoggle">
+        <h1>User Login</h1>
+        <p style="color: green;">{{LoginMessage}}</p>
+        <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+            <input type="email" class="form-input" name="email" placeholder="Enter user email" ngModel />
+            <input type="password" class="form-input" name="password" placeholder="Enter user password" ngModel />
+            <button type="submit" class="btn btn-outline-primary">Login</button>
+            <label for="form2Example3">
+                Already have an account? <a (click)="openLogin()" class="link" style="cursor: pointer;">Click to Login</a>
+            </label>
+        </form>
+    </div>
 </div>
