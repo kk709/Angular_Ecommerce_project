@@ -44,7 +44,7 @@
   ],
   "products": [
     {
-      "name": "Fruits",
+      "name": "Apple.",
       "price": "500",
       "category": "Fruits",
       "image": "https://www.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg",
@@ -108,7 +108,7 @@
       "id": 8
     }
   ],
-  "users": [
+  "user": [
     {
       "name": "hasnain",
       "email": "hasnain@gmail.com",
@@ -120,6 +120,112 @@
       "email": "haris@gmail.com",
       "password": "123456",
       "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "vegetables",
+      "price": "50",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1597362925123-77861d3fbac7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmVnZXRhYmxlc3xlbnwwfHwwfHw%3D&w=1000&q=80",
+      "discription": "1st stock of the month",
+      "quantity": 2,
+      "userId": 1,
+      "productId": 2,
+      "id": 1
+    },
+    {
+      "name": "vegetables",
+      "price": "50",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1597362925123-77861d3fbac7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmVnZXRhYmxlc3xlbnwwfHwwfHw%3D&w=1000&q=80",
+      "discription": "1st stock of the month",
+      "quantity": 2,
+      "userId": 1,
+      "productId": 2,
+      "id": 2
+    },
+    {
+      "name": "vegetables",
+      "price": "50",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1597362925123-77861d3fbac7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmVnZXRhYmxlc3xlbnwwfHwwfHw%3D&w=1000&q=80",
+      "discription": "1st stock of the month",
+      "quantity": 2,
+      "userId": 1,
+      "productId": 2,
+      "id": 3
+    },
+    {
+      "name": "vegetables",
+      "price": "50",
+      "category": "vegetables",
+      "image": "https://images.unsplash.com/photo-1597362925123-77861d3fbac7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmVnZXRhYmxlc3xlbnwwfHwwfHw%3D&w=1000&q=80",
+      "discription": "1st stock of the month",
+      "quantity": 2,
+      "userId": 1,
+      "productId": 2,
+      "id": 4
+    },
+    {
+      "name": "Fruits",
+      "price": "500",
+      "category": "Fruits",
+      "image": "https://www.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg",
+      "discription": "1st stock of fresh apples.",
+      "quantity": 2,
+      "productId": 1,
+      "id": 5
+    },
+    {
+      "name": "I phone",
+      "price": "1000000",
+      "category": "Apple Phones",
+      "image": "https://cdn.shopify.com/s/files/1/0632/7880/9324/products/IMG-7325595_823x.jpg?v=1663003302",
+      "discription": "I phone 14 Pro Max",
+      "quantity": 0,
+      "productId": 7,
+      "id": 6
+    },
+    {
+      "name": "I phone",
+      "price": "1000000",
+      "category": "Apple Phones",
+      "image": "https://cdn.shopify.com/s/files/1/0632/7880/9324/products/IMG-7325595_823x.jpg?v=1663003302",
+      "discription": "I phone 14 Pro Max",
+      "quantity": 2,
+      "productId": 7,
+      "id": 7
+    },
+    {
+      "name": "Toys",
+      "price": "150",
+      "category": "Toys",
+      "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2lkcyUyMHRveXN8ZW58MHx8MHx8&w=1000&q=80",
+      "discription": "Toys fro kids...",
+      "quantity": 1,
+      "productId": 5,
+      "id": 8
+    },
+    {
+      "name": "Fruits",
+      "price": "500",
+      "category": "Fruits",
+      "image": "https://www.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg",
+      "discription": "1st stock of fresh apples.",
+      "quantity": 1,
+      "productId": 1,
+      "id": 9
+    },
+    {
+      "name": "T-shirts",
+      "price": "50",
+      "category": "Closths",
+      "image": "https://img.lovepik.com/element/40047/7563.png_300.png",
+      "discription": "1st stock",
+      "quantity": 2,
+      "productId": 3,
+      "id": 10
     }
   ]
 }

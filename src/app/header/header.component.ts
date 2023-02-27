@@ -22,16 +22,14 @@ export class HeaderComponent implements OnInit {
       // console.log(val.url);
       if(val.url){
         if(localStorage.getItem('seller') && val.url.includes('seller')){
-          // console.log('inside seller area');
           if(localStorage.getItem('seller')){
             let sellerStore = localStorage.getItem('seller');
             let sellerData = sellerStore && JSON.parse(sellerStore)[0];
             this.sellerName = sellerData.name;
             this.menuType='seller';
           }else if(localStorage.getItem('user')){
-            // console.log("user exist")
             let userStore = localStorage.getItem('user');
-            let userData = userStore && JSON.parse(userStore);
+            let userData = userStore && JSON.parse(userStore)[0];
             this.userName = userData.name;
             this.menuType = 'user';
           }

@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { login, signUp } from '../data-type';
+import { cart, login, signUp } from '../data-type';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 import { products } from './../data-type';
@@ -70,7 +70,7 @@ export class SellerService {
   productUpdate(id: string) {
     return this.http.get<products>(`http://localhost:3000/products/${id}`)
   }
-  UpdateProduct(product:products){
+  UpdateProduct(product:products,){
     return this.http.put<products>(`http://localhost:3000/products/${product.id}`,product);
   }
   popularProduct(){
@@ -101,6 +101,18 @@ export class SellerService {
       localStorage.setItem('localCart', JSON.stringify(items));
       this.cartData.emit(items);
     }
+  }
+
+  AddToCart(cartData:cart){
+    return this.http.post('http://localhost:3000/cart', cartData)
+  }
+
+  getCartData(userId:number){
+    return this.http.get('http://localhost:3000/cart?userId='+userId, { observe: 'response' }).subscribe((res:any) =>{
+      if(res && res.body){
+        this.cartData.emit(res.body);
+      }
+    })
   }
 
 }

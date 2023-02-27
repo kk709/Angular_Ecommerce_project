@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SellerService } from '../services/seller.service';
 import { UserServiceService } from '../services/user-service.service';
-import { login, signUp } from './../data-type';
+import { cart, login, products, signUp } from './../data-type';
 
 @Component({
   selector: 'app-user-auth',
@@ -11,7 +12,7 @@ export class UserAuthComponent implements OnInit {
   signupMessage: string | undefined
   LoginMessage: string | undefined
   formtoggle = false;
-  constructor(private _user: UserServiceService) { }
+  constructor(private _user: UserServiceService, private seller:SellerService) { }
 
   ngOnInit(): void {
     this._user.userReload();
@@ -37,6 +38,37 @@ export class UserAuthComponent implements OnInit {
 
   openLogin(){
     this.formtoggle = false
+  }
+
+  localCartToRemoveCart(){
+    let data = localStorage.getItem('localCart');
+    let user  = localStorage.getItem('user')
+    let userId = user && JSON.parse(user).id
+    if(data){
+      let cartDataList:products[] = JSON.parse(data)
+      
+      cartDataList.forEach((product:products, index) => {
+        let cartData:cart = {
+          ...product,
+          productId: product.id,
+          userId
+        }
+        delete cartData.id;
+        setTimeout(() => {
+          this.seller.AddToCart(cartData).subscribe((res:any) => {
+          if(res){
+            console.log("Item Stored in DB")
+          }
+        })
+        if(cartDataList.length===index+1){
+          localStorage.removeItem('localCart')
+        }
+        }, 1000);
+      });
+    }
+    setTimeout(() => {
+      this.seller.getCartData(userId)
+    }, 2000);
   }
 
 }
