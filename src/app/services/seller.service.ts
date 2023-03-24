@@ -1,7 +1,7 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { cart, login, signUp } from '../data-type';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { products } from './../data-type';
 import { JsonPipe } from '@angular/common';
@@ -20,9 +20,12 @@ export class SellerService {
   private _sellersignup = this._api_url.concat('seller');
   private _productsAdd = this._api_url.concat('products');
   private _productsList = this._api_url.concat('products');
+  private _djangoApi = 'http://localhost:8000/studentapi/'
   // private _deleteProduct = this._api_url.concat(`products/?id=${id}`)
 
-
+testapi() {
+  return this.http.get(this._djangoApi);
+}
 
   userSignup(data: signUp) {
     this.http.post(this._sellersignup, data, { observe: 'response' })

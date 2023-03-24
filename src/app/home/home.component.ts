@@ -11,10 +11,14 @@ export class HomeComponent implements OnInit {
 
   constructor( private seller: SellerService) { }
   popularProducts: products[] | undefined;
-  ngOnInit(): void {
+  ngOnInit(): any {
     this.seller.popularProduct().subscribe((res) => {
       this.popularProducts = res
     })
+
+    // this.seller.testapi().subscribe((res:any) => {
+    //   console.log(res);
+    // })
   }
 
 }
